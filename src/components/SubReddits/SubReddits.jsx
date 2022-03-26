@@ -7,7 +7,6 @@ import "./SubReddits.scss";
 export const SubReddits = ({ handleNavSubredditClick }) => {
 	const subRedditList = [
 		"/r/adrenaline",
-		"/r/basejumping",
 		"/r/camping",
 		"/r/canyoneering",
 		"/r/climbing",
