@@ -19,12 +19,12 @@ const PostListings = ({ searchterm }) => {
 		posts
 			.filter(
 				(post) =>
-					post.data.selftext.toLowerCase().includes(searchterm.toLowerCase()) &&
+					post.data.title.includes(searchterm.toLowerCase()) &&
 					post.data.url.includes(".jpg")
 			)
 			.map((post, idx) => <PostCard key={idx} data={post} />)
 	) : (
-		//Show error 
+		//Show error
 		<div className="posts.error">
 			<h3>{posts.Error}</h3>
 		</div>
@@ -38,7 +38,7 @@ const PostListings = ({ searchterm }) => {
 					: subRedditName}
 			</h4>
 			{(renderPosts.length && renderPosts) || (
-				<h3 className="p-2" style={{height: "100vh"}}>
+				<h3 className="p-2" style={{ height: "100vh" }}>
 					...Nothing to see here, go make your own adventures and post
 					them here!!
 				</h3>
