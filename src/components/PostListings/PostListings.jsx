@@ -7,9 +7,9 @@ import PostCard from "../PostCard/PostCard";
 import "./PostListings.scss";
 
 const PostListings = ({ searchterm }) => {
-	//get all posts
+	//get all posts state
 	const posts = useSelector(getAllPosts);
-
+	//Get subreddit state
 	const subRedditName = useSelector(getSubReddit);
 
 	let renderPosts = "";

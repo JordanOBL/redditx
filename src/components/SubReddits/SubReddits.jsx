@@ -1,9 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import { getSubReddit } from "../../features/SubReddit/subRedditSlice.js";
 import { useDispatch } from "react-redux";
 import { changeSubReddit } from "../../features/SubReddit/subRedditSlice.js";
-import { addPosts } from "../../features/Posts/postSlice.js";
 import "./SubReddits.scss";
 
 export const SubReddits = ({ handleNavSubredditClick }) => {
