@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import ScrollToTop from "react-scroll-to-top";
 import { useSelector, useDispatch } from "react-redux";
 import { Container, Row, Col } from "react-bootstrap";
 import Header from "./components/Header/Header";
@@ -34,6 +35,7 @@ const App = () => {
 
 	return (
 		<Container fluid className="p-0 app-wrapper">
+		<ScrollToTop smooth={true} color={"lime"}  />
 			<Header />
 			{/* BODY */}
 			<Row className="posts-subrooms-wrapper ">
