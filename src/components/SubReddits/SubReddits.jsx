@@ -9,7 +9,7 @@ export const SubReddits = ({ handleNavSubredditClick }) => {
 	const dispatch = useDispatch();
 	const currSubReddit = useSelector(getSubReddit)
 	const subRedditList = [
-		"/r/adrenaline",
+		"/r/adrenalineporn",
 		"/r/camping",
 		"/r/canyoneering",
 		"/r/climbing",
