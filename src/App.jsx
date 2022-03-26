@@ -21,7 +21,7 @@ const App = () => {
 		// API CALL
 		const fetchPosts = async () => {
 			const response = await axios(
-				baseURL + subredditState + ".json"
+				baseURL + subredditState + ".json?limit=100"
 			).catch((err) => {
 				console.log("UNSUCCESSFUL :", err);
 			});
