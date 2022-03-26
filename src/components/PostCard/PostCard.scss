@@ -1,0 +1,34 @@
+@import "../../common/color.scss";
+
+.post-container {
+	color: black;
+	background-color: white;
+	border: 1px solid $secondary-color;
+	text-align: center;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+		rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+		rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+	.post-title {
+		font-weight: bold;
+		margin-top: 1rem;
+	}
+}
+
+.post-image {
+	margin-bottom: 15px;
+	width: 100%;
+	height: auto;
+}
+.video-player-container {
+	display: flex;
+	justify-content: center;
+}
+
+.post-footer {
+	text-align: center;
+	font-size: 0.8rem;
+
+	.post-author {
+		color: $trinary-color;
+	}
+}

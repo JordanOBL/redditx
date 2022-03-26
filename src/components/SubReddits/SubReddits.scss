@@ -1,0 +1,47 @@
+@import "../../common/color.scss";
+
+.subreddit-container {
+	margin-top: 3rem;
+	padding: 10px;
+	h5 {
+		padding: 5px;
+	}
+}
+
+.subreddit-list {
+	background: $secondary-color;
+	width: 75%;
+	margin-top: 20px;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+		rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+		rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+    list-style:disc ;
+
+	li {
+		cursor: pointer;
+		color: white;
+		&:hover {
+			color: lime;
+		}
+		border-bottom: 1px solid $primary-color;
+		width: 100%;
+		height: 4rem;
+		display: flex;
+		align-items: center;
+		font-size: 1.2rem;
+		padding: 1.5rem;
+		overflow: hidden;
+		letter-spacing:.1rem;
+	}
+}
+
+@media only screen and (min-width: 992px){
+	li {
+		&:hover{height: 5rem;}
+	}
+}

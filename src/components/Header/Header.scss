@@ -1,0 +1,23 @@
+@import "../../common/color.scss";
+
+.navbar-elements-container {
+	background-color: black;
+}
+
+li {
+	background-color: black;
+}
+@media only screen and (min-width: 992px) {
+	.navbar-nav > .subreddit-container{
+		display: none;
+	}
+}
+.brand-reddit {
+	color: white;
+}
+.brand-xtreme {
+	color: $primary-color;
+	letter-spacing: 1px;
+}
+
+

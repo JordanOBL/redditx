@@ -1,0 +1,27 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./common/color.scss";
+*{
+	overflow-x: hidden;
+}
+body {
+ font-family: 'Open Sans', sans-serif;
+ font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6, p, li {
+ font-family: 'Archivo', sans-serif;
+ font-weight: 500;
+}
+.app-wrapper {
+	background-color: $primary-color;
+}
+
+.subreddits-col {
+	display: none;
+}
+
+@media only screen and (min-width: 992px) {
+	.subreddits-col {
+		display: grid;
+	}
+}
