@@ -3,7 +3,6 @@ import ReactPlayer from "react-player/lazy";
 import "./PostCard.scss";
 
 const PostCard = ({ data }) => {
-
 	return (
 		<div className="post-container mt-4 d-flex flex-column">
 			<h4 className="post-title p-3">{data.data.title}</h4>
@@ -20,9 +19,17 @@ const PostCard = ({ data }) => {
 			{/* IF post has a video display video */}
 			{data.data.url.includes(".mp4") && (
 				<div className="video-player-container">
-					<ReactPlayer playing={true} controls={true} className="react-player post-video" light={true} pip={true} alt="" url={data.data.url} />
+					<ReactPlayer
+						playing={true}
+						controls={true}
+						className="react-player post-video"
+						light={true}
+						pip={true}
+						alt=""
+						url={data.data.url}
+					/>
 				</div>
-			) }
+			)}
 
 			{/* Footer for each post */}
 			<div className="post-footer d-flex flex-column">

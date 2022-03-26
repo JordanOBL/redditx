@@ -19,7 +19,7 @@ const PostListings = ({ searchterm }) => {
 		posts
 			.filter(
 				(post) =>
-					post.data.title.includes(searchterm.toLowerCase()) &&
+					post.data.selftext.includes(searchterm.toLowerCase()) &&
 					post.data.url.includes(".jpg")
 			)
 			.map((post, idx) => <PostCard key={idx} data={post} />)
