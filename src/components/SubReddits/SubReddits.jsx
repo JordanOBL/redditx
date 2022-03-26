@@ -1,10 +1,13 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import { useDispatch } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { changeSubReddit } from "../../features/SubReddit/subRedditSlice.js";
 import "./SubReddits.scss";
+import {getSubReddit} from "../../features/SubReddit/subRedditSlice.js"
 
 export const SubReddits = ({ handleNavSubredditClick }) => {
+	const dispatch = useDispatch();
+	const currSubReddit = useSelector(getSubReddit)
 	const subRedditList = [
 		"/r/adrenaline",
 		"/r/camping",
@@ -23,7 +26,7 @@ export const SubReddits = ({ handleNavSubredditClick }) => {
 		"/r/womenshredders",
 	];
 
-	const dispatch = useDispatch();
+	
 
 	const handleClick = (e) => {
 		const toggler = document.querySelector(".navbar-toggler");
@@ -42,6 +45,7 @@ export const SubReddits = ({ handleNavSubredditClick }) => {
 						className="subreddit-title"
 						onClick={handleClick}
 						key={idx}
+						style={subreddit === currSubReddit ? {color: "lime"} : {color: "white"} }
 					>
 						{subreddit}
 					</li>
